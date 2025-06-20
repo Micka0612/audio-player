@@ -1,22 +1,51 @@
 body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
   text-align: center;
-  margin-top: 50px;
+  margin: 0;
+  padding: 40px;
 }
 
 .player {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  display: inline-block;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+h1 {
+  margin-bottom: 20px;
 }
 
 .botoes button {
-  margin: 10px;
+  margin: 10px 5px;
   padding: 10px 20px;
+  border: none;
+  background-color: #00c4cc;
+  color: white;
+  border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.botoes button:hover {
+  background-color: #009da3;
+}
+
+.tempo {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.controle-volume {
+  margin-top: 20px;
+}
+
+input[type="range"] {
+  width: 100%;
 }
 
