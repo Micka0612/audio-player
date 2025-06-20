@@ -1,13 +1,34 @@
-<div class="botoes">
-  <button onclick="retroceder()">⏪ Voltar 10s</button>
-  <button id="playPauseBtn" onclick="togglePlayPause()">▶ Tocar</button>
-  <button onclick="avancar()">⏩ Avançar 10s</button>
-</div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Reprodutor de Áudio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player">
+    <h1>🎧 Reprodutor de Áudio</h1>
 
-<p>
-  <strong>Tempo:</strong> <span id="tempoAtual">0:00</span> / <span id="duracaoTotal">0:00</span>
-</p>
+    <audio id="audio" src="musica.mp3"></audio>
 
-<label for="volume"><strong>Volume:</strong></label>
-<input type="range" id="volume" min="0" max="1" step="0.01" value="1" onchange="mudarVolume()">
+    <div class="botoes">
+      <button onclick="retroceder()">⏪ Voltar 10s</button>
+      <button id="playPauseBtn" onclick="togglePlayPause()">▶ Tocar</button>
+      <button onclick="avancar()">⏩ Avançar 10s</button>
+    </div>
+
+    <div class="tempo">
+      <span id="tempoAtual">0:00</span> / <span id="duracaoTotal">0:00</span>
+    </div>
+
+    <div class="controle-volume">
+      <label for="volume">🔊 Volume:</label>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1" onchange="mudarVolume()">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
 
